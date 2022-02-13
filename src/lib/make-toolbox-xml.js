@@ -30,6 +30,9 @@ const motion = function (isInitialSetup, isStage, targetId) {
                 </shadow>
             </value>
         </block>
+        <!-- SF: NEW START: Move 100 Steps Block-->
+        <block type="motion_move100steps" />
+        <!-- SF: NEW END: Move 100 Steps Block -->
         <block type="motion_turnright">
             <value name="DEGREES">
                 <shadow type="math_number">
