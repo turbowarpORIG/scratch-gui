@@ -412,6 +412,9 @@ const control = function (isInitialSetup, isStage) {
             </value>
         </block>
         <block id="forever" type="control_forever"/>
+        <!-- SF: NEW forever if block START-->
+        <block id="foreverif" type="control_foreverif"/>
+        <!-- SF: NEW forever if block END -->
         ${blockSeparator}
         <block type="control_if"/>
         <block type="control_if_else"/>
