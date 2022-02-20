@@ -34,6 +34,7 @@ const vmManagerHOC = function (WrappedComponent) {
                 this.props.vm.attachAudioEngine(this.audioEngine);
                 this.props.vm.initialized = true;
                 this.props.vm.setLocale(this.props.locale, this.props.messages);
+                vm.setCompilerOptions({ enabled: false });
             }
             if (!this.props.isPlayerOnly && !this.props.isStarted) {
                 this.props.vm.start();
@@ -63,7 +64,7 @@ const vmManagerHOC = function (WrappedComponent) {
 
                     // If the vm is not running, call draw on the renderer manually
                     // This draws the state of the loaded project with no blocks running
-                    // which closely matches the 2.0 behavior, except for monitors–
+                    // which closely matches the 2.0 behavior, except for monitorsâ€“
                     // 2.0 runs monitors and shows updates (e.g. timer monitor)
                     // before the VM starts running other hat blocks.
                     if (!this.props.isStarted) {
