@@ -31,7 +31,7 @@ const motion = function (isInitialSetup, isStage, targetId) {
             </value>
         </block>
         <!-- SF: NEW START: Move 100 Steps Block-->
-        <block type="motion_move100steps" />
+        <!-- <block type="motion_move100steps" /> -->
         <!-- SF: NEW END: Move 100 Steps Block -->
         <block type="motion_turnright">
             <value name="DEGREES">
@@ -413,7 +413,7 @@ const control = function (isInitialSetup, isStage) {
         </block>
         <block id="forever" type="control_forever"/>
         <!-- SF: NEW forever if block START-->
-        <block id="foreverif" type="control_foreverif"/>
+        <!-- <block id="foreverif" type="control_foreverif"/> -->
         <!-- SF: NEW forever if block END -->
         ${blockSeparator}
         <block type="control_if"/>
